@@ -1,0 +1,174 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* header */
+header {
+  height: 80vh;
+  background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .5)), url(images/stable-diffusion-01.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+/* navbar */
+.nav-menu {
+  background: linear-gradient(rgb(0, 0, 0, .6), rgba(0, 0, 0, .8));
+  padding: 10px;
+  transition: all .7s;
+}
+
+.menu-item {
+  font-size: 16px;
+  letter-spacing: 1px;
+  color:#eee;
+  transition: color .5s;
+}
+
+.menu-item:hover {
+  color: #70aed2;
+}
+
+.line1, .line2, .line3 {
+  width: 23px;
+  height: 3px;
+  margin: 5px;
+  transition: all .4s;
+}
+
+.change .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.change .line2 {
+  opacity: 0;
+}
+
+.change .line3 {
+  transform: rotate(45deg) translate(-5px, -6px)
+}
+
+.custom-navbar {
+  padding: 5px 30px;
+  background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .7));
+}
+
+
+/* file upload */
+.upload-section {
+  background: #aaa;
+}
+
+.box {
+  width: 100%;
+  padding:30px;
+}
+
+.request-area {
+  border: none;
+  border-radius: 12px;
+  width: 100%;
+  height: 10rem;
+  resize: none;
+}
+
+.request-area:focus {
+  outline: none;
+}
+
+.uploadlabel {
+  width: 100%;
+  min-height: 100px;
+  background: #18a7ff0d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px dashed #18a7ff82;
+  cursor: pointer
+}
+
+.uploadlabel span {
+  font-size: 70px;
+  color: #18a7ff;
+}
+
+.uploadlabel p  {
+  color: #18a7ff;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.uploaded {
+  margin: 10px 10px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #a5a5a5;
+}
+
+.showfilebox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding: 10px 15px;
+  box-shadow:#0000000d 0px 0px 0px 1px, #d1d5db3d 0px 0px 0px 1px inset;
+}
+
+.showfilebox .left {
+  display: flex;
+  align-items: center;
+  flex-wrap:wrap;
+  gap: 10px;
+}
+
+.filetype {
+  background: #18a7ff;
+  color:#fff;
+  padding: 5px 15px;
+  font-weight: 700;
+  border-radius: 3px;
+}
+
+.left h3 {
+  font-weight: 600;
+  font-size: 18px;
+  color: #292f42;
+  margin: 0;
+}
+
+.right span {
+  background: #18a7ff;
+  color: #fff;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  display: inline-block;
+  text-align: center;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

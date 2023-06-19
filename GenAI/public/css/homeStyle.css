@@ -1,0 +1,99 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* header */
+header {
+  height: 80vh;
+  background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .5)), url(/images/stable-diffusion-01.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+/* navbar */
+.nav-menu {
+  background: linear-gradient(rgb(0, 0, 0, .6), rgba(0, 0, 0, .8));
+  padding: 10px;
+  transition: all .7s;
+}
+
+.menu-item {
+  font-size: 16px;
+  letter-spacing: 1px;
+  color:#eee;
+  transition: color .5s;
+}
+
+.menu-item:hover {
+  color: #70aed2;
+}
+
+.line1, .line2, .line3 {
+  width: 23px;
+  height: 3px;
+  margin: 5px;
+  transition: all .4s;
+}
+
+.change .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.change .line2 {
+  opacity: 0;
+}
+
+.change .line3 {
+  transform: rotate(45deg) translate(-5px, -6px)
+}
+
+.custom-navbar {
+  padding: 5px 30px;
+  background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .7));
+}
+
+
+/* banner */
+.banner {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+}
+
+.banner-heading {
+  animation-name: anim;
+  animation-duration: 2s;
+}
+
+.banner-par {
+  animation-name: anim;
+  animation-duration: 2s;
+  animation-delay: .5s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes anim {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.price-card-button {
+  background: #f5593d;
+  width: 130px;
+  border-radius: 25px;
+  box-shadow: 5px 8px 18px #000;
+  transition: all .2s;
+}
+
+.price-card-button:hover {
+  background: #f9893d;
+  transform: translateY(-2px)
+}
+
